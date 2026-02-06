@@ -28,43 +28,33 @@ public class ArraysMaxMinNumbers {
 		for(int j = 0; j<arr.length; j++) {
 			
 			if(arr[j] > max) {
-				
+				secmax = max;
 				max = arr[j];
-				
+			//   -----------   code to find Second max number --------------
+			}else if(arr[j]>secmax && arr[j]!=max) {
+				secmax = arr[j];
 			}
 		}System.out.println("Maximum number in arrays is ---> " + max);
 		
-		
-//   -----------   code to find Second max number --------------		
-		for(int i =0; i<arr.length ; i++) {
-			if(arr[i]>secmax && arr[i]!=max) {
-				secmax = arr[i];
-			}
-		}System.out.println("Second max " + secmax);
-//   -----------   code to find Second max number --------------		
+		System.out.println("Second max " + secmax);	
 		
 
 		
 // ----------   code to find mininum number -------------		
 		for(int k = 0; k<arr.length; k++) {
 			if(arr[k] < min) {
-				
+				secmin = min;
 				min = arr[k];
 				
-			}
-			
-		}System.out.println("Minimu, number in arrays is ---> " + min);
-		
-
-// ------- code to find 2nd minimum number in Array -------
-		for(int k = 0; k<arr.length; k++) {
-			if(arr[k] < secmin && arr[k]!=min) {
+				// ------- code to find 2nd minimum number in Array -------
+			}else if(arr[k] < secmin && arr[k]!=min) {
 				
 				secmin = arr[k];
 				
 			}
 			
-		}System.out.println("2nd Minimu, number in arrays is ---> " + secmin);
+		}System.out.println("Minimu, number in arrays is ---> " + min);
+	System.out.println("2nd Minimu, number in arrays is ---> " + secmin);
 		
 		
 		

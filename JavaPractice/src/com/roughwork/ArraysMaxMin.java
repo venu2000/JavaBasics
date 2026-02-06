@@ -6,7 +6,7 @@ public class ArraysMaxMin {
 	
 		
 		
-		int[] arr = {22,54,60,70,87,78};
+		int[] arr = {22,54,79,60,70,87,78};
 		
 		int max = arr[0];
 		int secMax = arr[0];
@@ -29,14 +29,7 @@ public class ArraysMaxMin {
 		System.out.println(secMax);
 	
 		
-		for(int i=0; i<arr.length; i++) {
-			if(arr[i]>max) {
-				max = arr[i];
-			}else if(arr[i] > secMax && arr[i]!=max) {
-				secMax = arr[i];
-			}
-		}System.out.println(max);
-		System.out.println(secMax);
+		
 		
 		
 		for(int i =0; i<arr.length ; i++) {
